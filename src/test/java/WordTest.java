@@ -10,7 +10,7 @@ public class WordTest {
   }
 
   @Test
-  public void getName_categoryInstantiatesWithSpelling_run() {
+  public void getSpelling_wordInstantiatesWithSpelling_run() {
     Word testWord = new Word("run");
     assertEquals("run", testWord.getSpelling());
   }

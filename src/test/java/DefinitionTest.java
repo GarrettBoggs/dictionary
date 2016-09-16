@@ -5,14 +5,14 @@ public class DefinitionTest {
 
   @Test
   public void defintion_instantiatesCorrectly_true() {
-    Definition testCategory = new Definition("move at a speed faster than a walk");
-    assertEquals(true, testCategory instanceof Definition);
+    Definition testDefinition = new Definition("move at a speed faster than a walk");
+    assertEquals(true, testDefinition instanceof Definition);
   }
 
   @Test
-  public void Definition_instantiatesWithDescription_String() {
-    Definition myDefinition = new Definition("move at a speed faster than a walk");
-    assertEquals("move at a speed faster than a walk", myDefinition.getInformation());
+  public void getInformation_DefinitionInstantiatesWithInformation_moveatspeed() {
+    Definition testDefinition = new Definition("move at a speed faster than a walk");
+    assertEquals("move at a speed faster than a walk", testDefinition.getInformation());
   }
 
   @Test

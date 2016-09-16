@@ -11,7 +11,7 @@ _A dictionary program created with spark framework and java_
 * _Copy the repository from GitHub_
 * _Open in code editor of your choice_
 * _Make sure you have gradle and junit installed!_
-* _Gradle run and open at http://localhost:4567/ !_
+* _Gradle run and open at http://localhost:4567 !_
 
 ## GitHub link
 
