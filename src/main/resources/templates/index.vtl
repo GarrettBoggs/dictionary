@@ -2,8 +2,12 @@
 
 <h1>All Words</h1>
 <ul>
-  #foreach ($word in $words)
-    <li><a href="/words/$word.getId()">$word.getSpelling()</a></li>
+  #if($words.size() > 0)
+    #foreach ($word in $words)
+      <li><a href="/words/$word.getId()">$word.getSpelling()</a></li>
+    #end
+  #else
+    <p> The dictionary is empty! </p>
   #end
 </ul>
 

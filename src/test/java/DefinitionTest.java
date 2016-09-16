@@ -9,7 +9,7 @@ public class DefinitionTest {
     assertEquals(true, testCategory instanceof Definition);
   }
 
-    @Test
+  @Test
   public void Definition_instantiatesWithDescription_String() {
     Definition myDefinition = new Definition("move at a speed faster than a walk");
     assertEquals("move at a speed faster than a walk", myDefinition.getInformation());
@@ -36,7 +36,7 @@ public class DefinitionTest {
     Definition myDefinition = new Definition("move at a speed faster than a walk");
     assertEquals(1, myDefinition.getId());
   }
-  
+
   @Test
   public void find_returnsDefinitionWithSameId_secondDefinition() {
     Definition firstDefinition = new Definition("move at a speed faster than a walk");

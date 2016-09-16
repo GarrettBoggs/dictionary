@@ -1,13 +1,18 @@
-<h1>Definitons for $word.getSpelling():</h1>
+<h1>Definitions for $word.getSpelling():</h1>
 
 <ul>
-  #foreach($definition in $word.getDefinitions())
-   <li>$definition.getInformation()</li>
+  #if($word.getDefinitions().size() > 0)
+    #foreach($definition in $word.getDefinitions())
+     <li>$definition.getInformation()</li>
+    #end
+  #else
+    <p>Add some definitions!</p>
   #end
 </ul>
 
 <form action="/words/:id" method="post">
-<input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+  <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+
   <label for="definition">Definition</label>
   <input id="definition" name="definition" type="text">
   <button type="submit" class="btn btn-success">Add Definition</button>

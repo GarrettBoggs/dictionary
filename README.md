@@ -28,10 +28,11 @@ https://github.com/GarrettBoggs/dictionary
   * Example input: New Definition: "move quickly"
   * Example output: Definition: move quickly
 
-  **Multiple Definitions can be created and shown**
+  **Multiple Definitions can be created**
 
   * Example input: New Definition: "move quickly"
   * Example output: Definition: "move quickly"
+
   * Example input: New Definition: "move about in a hurried and hectic way."
   * Example output: Definition: "move quickly" "move about in a hurried and hectic way."
 
@@ -40,17 +41,18 @@ https://github.com/GarrettBoggs/dictionary
   * Example input: user clicks delete definitions button
   * Example output: Nothing
 
-  **Word can be created**
+  **Words can be created**
 
   * Example input: run
-  * Example output: New word created: run
+  * Example output: Total words: run
 
   **Multiple words can be created**
 
   * Example input: run
-  * Example output: New word created: run
+  * Example output: Total words: run
+
   * Example input: bird
-  * Example output: New word created: bird
+  * Example output: Total words: run bird
 
   **Definition can be added to words**
 
@@ -61,7 +63,9 @@ https://github.com/GarrettBoggs/dictionary
 
   * Example input: user clicks run and types in "moves quickly"
   * Example output: Run - Definition - move quickly
+
   * Example input: Types in "move about in a hurried and hectic way."
   * Example output: "move quickly" "move about in a hurried and hectic way."
+
 
 Copyright (c) 2016 **Garrett Boggs**

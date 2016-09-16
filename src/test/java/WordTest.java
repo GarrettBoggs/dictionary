@@ -3,8 +3,8 @@ import static org.junit.Assert.*;
 
 public class WordTest {
 
-    @Test
-  public void category_instantiatesCorrectly_true() {
+  @Test
+  public void word_instantiatesCorrectly_true() {
     Word testWord = new Word("run");
     assertEquals(true, testWord instanceof Word);
   }

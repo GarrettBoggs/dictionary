@@ -15,29 +15,29 @@ public class Word {
     mDefinitions = new ArrayList<Definition>();
   }
 
-    public String getSpelling() {
+  public String getSpelling() {
      return mSpelling;
-   }
+  }
 
-   public static List<Word> all() {
+  public static List<Word> all() {
     return instances;
-   }
+  }
 
   public static void clear() {
     instances.clear();
   }
 
-   public int getId() {
+  public int getId() {
      return mId;
-   }
+  }
 
-   public static Word find(int id) {
+  public static Word find(int id) {
     return instances.get(id - 1);
   }
 
-   public List<Definition> getDefinitions() {
+  public List<Definition> getDefinitions() {
      return mDefinitions;
-   }
+  }
 
    public void addDefinition(Definition def) {
      mDefinitions.add(def);
