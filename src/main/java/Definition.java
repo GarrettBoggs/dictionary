@@ -13,23 +13,23 @@ public class Definition {
   }
 
   public String getInformation() {
-   return mInformation;
+    return mInformation;
   }
 
- public static List<Definition> all() {
-   return instances;
- }
+  public static List<Definition> all() {
+    return instances;
+  }
 
- public static void clear() {
-   instances.clear();
- }
+  public static void clear() {
+    instances.clear();
+  }
 
- public int getId() {
-   return mId;
- }
+  public int getId() {
+    return mId;
+  }
 
- public static Definition find(int id) {
-   return instances.get(id - 1);
- }
+  public static Definition find(int id) {
+    return instances.get(id - 1);
+  }
 
 }
