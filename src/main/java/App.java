@@ -23,6 +23,13 @@ public class App {
      return new ModelAndView(model, layout);
    }, new VelocityTemplateEngine());
 
+   get("/words", (request, response) -> {
+   Map<String, Object> model = new HashMap<String, Object>();
+   model.put("words", Word.all());
+   model.put("template", "templates/index.vtl");
+   return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
    post("/words", (request, response) -> {
     Map<String, Object> model = new HashMap<String, Object>();
     String name = request.queryParams("name");
