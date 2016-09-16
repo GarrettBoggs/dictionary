@@ -36,7 +36,7 @@ public class DefinitionTest {
     Definition myDefinition = new Definition("move at a speed faster than a walk");
     assertEquals(1, myDefinition.getId());
   }
-
+  
   @Test
   public void find_returnsDefinitionWithSameId_secondDefinition() {
     Definition firstDefinition = new Definition("move at a speed faster than a walk");
