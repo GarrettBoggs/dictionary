@@ -37,6 +37,8 @@ https://github.com/GarrettBoggs/dictionary
   * Example output: Definition: "move quickly" "move about in a hurried and hectic way."
 
   **Definition can be deleted**
+  * Example input: New Definition: "move quickly"
+  * Example output: Definition: "move quickly"
 
   * Example input: user clicks delete definitions button
   * Example output: Nothing

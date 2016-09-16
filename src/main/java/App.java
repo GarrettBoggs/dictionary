@@ -58,5 +58,13 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+    post("/delete-success", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      Word word = Word.find(Integer.parseInt(request.queryParams("wordId")));
+      word.getDefinitions().clear();
+      model.put("template", "templates/delete-success.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
   }
 }

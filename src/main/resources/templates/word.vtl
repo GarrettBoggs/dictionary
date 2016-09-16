@@ -18,4 +18,10 @@
   <button type="submit" class="btn btn-success">Add Definition</button>
 </form>
 
+<form action="/delete-success" method="post">
+  <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+
+  <button type="submit" id="delete" class="btn btn-danger">Delete definitions</button>
+</form>
+
 <a href="/">Back to homepage</a>
