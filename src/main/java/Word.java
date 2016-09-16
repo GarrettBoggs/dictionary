@@ -39,7 +39,7 @@ public class Word {
      return mDefinitions;
    }
 
-   public void addDefinition(Definition task) {
-     mDefinitions.add(task);
+   public void addDefinition(Definition def) {
+     mDefinitions.add(def);
    }
 }

@@ -1,0 +1,16 @@
+<h1>Definitons for $word.getSpelling():</h1>
+
+<ul>
+  #foreach($definition in $word.getDefinitions())
+   <li>$definition.getInformation()</li>
+  #end
+</ul>
+
+<form action="/words/:id" method="post">
+<input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+  <label for="definition">Definition</label>
+  <input id="definition" name="definition" type="text">
+  <button type="submit" class="btn btn-success">Add Definition</button>
+</form>
+
+<a href="/">Back to homepage</a>
